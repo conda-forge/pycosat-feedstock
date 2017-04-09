@@ -12,13 +12,14 @@ source:
 
 build:
   number: 0
-  script: python setup.py install
 
 requirements:
   build:
+    - {{ compiler('c') }}
     - msinttypes  # [win and py2k]
+
+  host:
     - python
-    - toolchain
 
   run:
     - python
@@ -53,3 +54,4 @@ extra:
     - msarahan
     - pelson
     - nehaljwani
+    - mingwandroid
