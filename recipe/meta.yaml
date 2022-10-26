@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/conda/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+  sha256: 79ffa99156810e58876dd6374af0b7bff88f9a4580ca8b8468c414c5c2454bb8
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -22,7 +22,6 @@ requirements:
     - msinttypes  # [win and py2k]
     - python
     - pip
-
   run:
     - python
 
@@ -31,9 +30,14 @@ test:
     - qg3-08.cnf
     - uf20-098.cnf
     - sudoku.py
-
+    - test_package.py
+  requires:
+    - pip
   imports:
     - pycosat
+  commands:
+    - pip check
+    - python test_package.py "{{ version }}"
 
 about:
   home: https://github.com/conda/pycosat
