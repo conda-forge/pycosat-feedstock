@@ -45,6 +45,7 @@ test:
 about:
   home: https://github.com/conda/pycosat
   license: MIT
+  license_family: MIT
   license_file:
     - LICENSE
     - COPYRIGHT
