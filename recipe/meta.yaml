@@ -49,7 +49,7 @@ about:
   license_file:
     - LICENSE
     - COPYRIGHT
-  license_url: https://github.com/conda/pycosat/blob/main/LICENSE
+  license_url: https://github.com/conda/pycosat/blob/{{ version }}/LICENSE
   summary: Bindings to picosat (a SAT solver)
   description: |
     PicoSAT is a popular SAT solver written by Armin Biere in pure C. This
