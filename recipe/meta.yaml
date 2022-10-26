@@ -18,6 +18,9 @@ requirements:
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - {{ compiler('c') }}
+    - pip
+    - setuptools
+    - wheel
   host:
     - msinttypes  # [win and py2k]
     - python
@@ -45,6 +48,7 @@ about:
   license_file:
     - LICENSE
     - COPYRIGHT
+  license_url: https://github.com/conda/pycosat/blob/main/LICENSE
   summary: Bindings to picosat (a SAT solver)
   description: |
     PicoSAT is a popular SAT solver written by Armin Biere in pure C. This
