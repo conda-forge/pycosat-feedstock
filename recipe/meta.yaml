@@ -48,7 +48,6 @@ about:
   license_family: MIT
   license_file:
     - LICENSE
-    - COPYRIGHT
   license_url: https://github.com/conda/pycosat/blob/{{ version }}/LICENSE
   summary: Bindings to picosat (a SAT solver)
   description: |
