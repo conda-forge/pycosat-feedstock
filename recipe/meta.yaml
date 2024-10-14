@@ -23,6 +23,7 @@ requirements:
     - msinttypes  # [win and py2k]
     - python
     - pip
+    - setuptools
   run:
     - python
 
